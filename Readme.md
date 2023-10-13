@@ -1,13 +1,13 @@
-﻿\# Sistema Auxiliar de jogo da forca
+﻿# Sistema Auxiliar de jogo da forca
 
 
-\##### Ambiente de desenvolvimento:
+##### Ambiente de desenvolvimento:
 
 - Replit
 
 -(extra-web-random....)
 
-\##### Como executar?
+##### Como executar?
 
 - Abra os arquivos no replit.
 - Clique no botão "Run".
@@ -20,7 +20,7 @@
 - "zeraTudo" - Para zerar as vidas.
 - (Basicamente como executado os trabalhos de haskell da professora...)
 
-\##### Funcionalidades
+##### Funcionalidades
 
 - Sorteia uma palavra válida.
 - Salva a palavra em um arquivo.
@@ -28,11 +28,11 @@
 - Gerencia a vida do úsuario em caso de acerto ou erro da letra.
 - Mostra a palavra sorteda
 
-\##### Processo de desenvolvimento
+##### Processo de desenvolvimento
 
-Primeiro comecei pesquisando fontes de como poderia ler as palavras de um arquivo, achei e até que foi facil com o "FilePath", pois ele ja tem a função pronta pra lidar com arquivo, e pra separar as palavras também com o "SplitOn", que retorna uma lista. O problema real, foi conseguir importar esses modulos, já que em cada ambiente funciona de um jeito. Outro problema que ocorreu, foi por que em haskell ao ler um arquivo, não é possivel escrever nele de novo, pois ele verifica que o arquivo está aberto em outro processo, mas aí pesquisando bastante, consegui descobrir que usando o "B.write..", funcionava. O resto das funções até são bem básicas. Algumas tive mais dificuldade príncipalmente em questão de sintaxe, mas testando com o tempo foi indo. E consegui achar várias respostas para o que precisei nas pesquisas, adaptando um pouco pro meu projeto, funcionou praticamente tudo.
+Primeiro comecei pesquisando fontes de como poderia ler as palavras de um arquivo, achei e até que foi fácil com o "FilePath", pois ele já tem a função pronta para lidar com arquivo, e para separar as palavras também com o "SplitOn", que retorna uma lista. O problema real, foi conseguir importar esses módulos, já que em cada ambiente funciona de um jeito. Outro problema que ocorreu, pois em haskell ao ler um arquivo, não é possível escrever nele de novo, pois ele verifica que o arquivo está aberto em outro processo, mas aí pesquisando bastante, consegui descobrir que usando o "B.write..", funcionava. O resto das funções até são bem básicas. Algumas tive mais dificuldade principalmente em questão de sintaxe, mas testando bastante, as funções foram funcionando. E consegui achar várias respostas para o que precisei nas pesquisas, adaptando um pouco para o meu projeto, funcionou praticamente tudo. Apenas a parte de transformá-lo em um servidor web, pois sempre que tentava fazer uma requisição para uma das minhas funções, o programa quebrava, aí preferi deixar apenas com as funções principais mesmo.
 
-\##### Referências
+##### Referências
 
 https://stackoverflow.com/questions/4503958/what-is-the-best-way-to-split-a-string-by-a-delimiter-functionally
 
