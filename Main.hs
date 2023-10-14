@@ -39,7 +39,6 @@ salvaPalavra a =  B.writeFile "palavraSorteada.txt" (B.pack (show a))
 -- Retorna Palavra sorteada
 retornaPalavraArq :: IO String
 retornaPalavraArq = lerArquivo "palavraSorteada.txt"
--- --------------------------------------------------------------------
 
 -- chama a função que verifica se te ma letra
 temLetra :: Char -> IO String
@@ -48,7 +47,6 @@ temLetra letra = do
     if verificaLetra palavra letra
         then return "Letra Certa"
         else perdeVida >> return "Letra Errada"
-
 
 -- Verifica se a letra que a pessoa digitou tem na palavra
 verificaLetra :: String -> Char -> Bool
@@ -79,7 +77,6 @@ leArqVida = do
 -- Zera as vidas
 zeraTudo :: IO ()
 zeraTudo = B.writeFile "vidas.txt" (B.pack (show 0))
-
 
 main :: IO ()
 main = scotty 3000 $ do
